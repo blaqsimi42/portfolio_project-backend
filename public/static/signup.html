@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Reiquired meta tags-->
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!--Bootstrap css-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1bfdd680b6.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  body {
+    background-image: url('/images/backi.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: brightness(70%)
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="/images/homify.jpg" alt="Logo" width="45" height="40" class="rounded-circle">
+          <h3>Homiefy.</h3>
+        </a>
+        <a class="nav-link active" aria-current="page" href="/api/newuser/auth/signup"
+          style="margin-top: 2rem;">Home</a>
+        <a class="nav-link active" href="/api/v1/products" style="margin-right: 2rem; margin-top: 2rem;">Products</a>
+        <a class="nav-link active" href="/api/info/about-us" style="margin-right: 2rem; margin-top: 2rem;">About us</a>
+      </div>
+  </div>
+  </nav>
+
+
+  <div style="height: 300px; width: 500px; margin-left: 20rem; margin-top: 4rem;">
+    <form action="/register" method="POST" class="row g-3" >
+      <div class="col-md-6" >
+        <label for="inputusername" class="form-label">Username</label>
+        <input type="name" class="form-control" id="inputusername" placeholder="blaqdoe45">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword">
+      </div>
+      <div class="col-12">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputemail" placeholder="example@gmail.com">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address </label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Apartment46, Alx-studio,  floor2">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>Oyo state</option>
+          <option>Lagos state</option>
+          <option>Osun state</option>
+          <option>Ondo state</option>
+          <option>Ogun state</option>
+          <option>Abia state </option>
+          <option>Imo state</option>
+          <option>Bayelsa state</option>
+          <option>Abia state</option>
+          <option>Anambra state</option>
+          <option>Delta state</option>
+          <option>Ekiti state</option>
+          <option>kogi state</option>
+          <option>Rivers state</option>
+          <option>sokoto state</option>
+          <option>Bauchi state</option>
+          <option>Kwara statw</option>
+          <option>Niger state </option>
+          <option>Imo state</option>
+          <option>Kebbi state</option>
+          <option>Enugu state</option>
+          <option>Akwa Ibom state</option>
+          <option>Eboyin state</option>
+          <option>Edo state</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            I agree to all terms and conditions
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button  type="submit" class="btn btn-secondary">Sign up</button>
+
+        <div class="col-24" style="float:right;">
+          <a class="btn btn-secondary" href="/api/user/auth/login">
+            Login
+          </a>
+        </div>
+
+
+
+    </form>
+
+
+  </div>
+
+
+  </div>
+
+</body>

@@ -1,0 +1,42 @@
+ #divbody1 {
+    margin-top: 5rem;
+    max-width: 500px;
+    min-width: auto;
+    float: left;
+
+}
+
+#divbody2 {
+    margin-top: 5rem;
+    max-width: 500px;
+    min-width: auto;
+    float: right;
+    height: 300px;
+}
+
+#downnav {
+    width:max-content;
+}
+
+#divc1 {
+    background: lightgray;
+    width: 1000px;
+    height: 380px;
+    border: 20%;
+    border-radius: 1rem;
+  }
+
+  #divc2 {
+    background: lightgrey;
+    width: 1076px;
+    height: 410px;
+    border: 20%;
+    border-radius: 1rem;
+    margin-left: 11rem; 
+  }
+
+  #furni {
+    margin-top: 13rem;
+    margin-top: 13rem;
+    margin-right: 2rem;
+  }
